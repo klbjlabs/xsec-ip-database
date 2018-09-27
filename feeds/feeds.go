@@ -48,6 +48,7 @@ func Init() {
 	// Evil ips func
 	EvilIpFuncs = append(EvilIpFuncs, FetchFromAlienvault)
 	EvilIpFuncs = append(EvilIpFuncs, FetchBadips)
+	EvilIpFuncs = append(EvilIpFuncs, FetchIpFromBambenekconsulting)
 	EvilIpFuncs = append(EvilIpFuncs, FetchBlocklist)
 	EvilIpFuncs = append(EvilIpFuncs, FetchFromBotscout)
 	EvilIpFuncs = append(EvilIpFuncs, FetchFromBruteforceblocker)
@@ -67,6 +68,7 @@ func Init() {
 
 	// Evil dns func
 	EvilDnsFuncs = append(EvilDnsFuncs, FetchDnsFromBambenekconsulting)
+	EvilDnsFuncs = append(EvilDnsFuncs, FetchDGADnsFromBambenekconsulting)
 	EvilDnsFuncs = append(EvilDnsFuncs, FetchFromCybercrime)
 	EvilDnsFuncs = append(EvilDnsFuncs, FetchDomainsFromdShield)
 	EvilDnsFuncs = append(EvilDnsFuncs, FetchDGADataFrom360Netlab)
